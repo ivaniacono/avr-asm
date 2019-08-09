@@ -1,9 +1,8 @@
 ; =======================================================
 ;                        MACROS
 ; =======================================================
+.include "m328Pdef.inc"
 
-.equ PORTB, 0x05
-.equ DDRB, 0x04
 .equ DELAY_VAL, 0x0F
 
 ; Define registers r16, r17, r18, r19
