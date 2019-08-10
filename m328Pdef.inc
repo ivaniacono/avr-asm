@@ -940,31 +940,31 @@ ZL	= 30
 
 
 ; ***** INTERRUPT VECTORS ************************************************
-.equ	INT0addr	, 0x0002	; External Interrupt Request 0
-.equ	INT1addr	, 0x0004	; External Interrupt Request 1
-.equ	PCI0addr	, 0x0006	; Pin Change Interrupt Request 0
-.equ	PCI1addr	, 0x0008	; Pin Change Interrupt Request 0
-.equ	PCI2addr	, 0x000a	; Pin Change Interrupt Request 1
-.equ	WDTaddr	, 0x000c	; Watchdog Time-out Interrupt
-.equ	OC2Aaddr	, 0x000e	; Timer/Counter2 Compare Match A
-.equ	OC2Baddr	, 0x0010	; Timer/Counter2 Compare Match A
-.equ	OVF2addr	, 0x0012	; Timer/Counter2 Overflow
-.equ	ICP1addr	, 0x0014	; Timer/Counter1 Capture Event
-.equ	OC1Aaddr	, 0x0016	; Timer/Counter1 Compare Match A
-.equ	OC1Baddr	, 0x0018	; Timer/Counter1 Compare Match B
-.equ	OVF1addr	, 0x001a	; Timer/Counter1 Overflow
-.equ	OC0Aaddr	, 0x001c	; TimerCounter0 Compare Match A
-.equ	OC0Baddr	, 0x001e	; TimerCounter0 Compare Match B
-.equ	OVF0addr	, 0x0020	; Timer/Couner0 Overflow
-.equ	SPIaddr	, 0x0022	; SPI Serial Transfer Complete
-.equ	URXCaddr	, 0x0024	; USART Rx Complete
-.equ	UDREaddr	, 0x0026	; USART, Data Register Empty
-.equ	UTXCaddr	, 0x0028	; USART Tx Complete
-.equ	ADCCaddr	, 0x002a	; ADC Conversion Complete
-.equ	ERDYaddr	, 0x002c	; EEPROM Ready
-.equ	ACIaddr	, 0x002e	; Analog Comparator
-.equ	TWIaddr	, 0x0030	; Two-wire Serial Interface
-.equ	SPMRaddr	, 0x0032	; Store Program Memory Read
+.equ	INT0addr	, (0x0002 << 1)	; External Interrupt Request 0
+.equ	INT1addr	, (0x0004 << 1)	; External Interrupt Request 1
+.equ	PCI0addr	, (0x0006 << 1)	; Pin Change Interrupt Request 0
+.equ	PCI1addr	, (0x0008 << 1)	; Pin Change Interrupt Request 0
+.equ	PCI2addr	, (0x000a << 1)	; Pin Change Interrupt Request 1
+.equ	WDTaddr		, (0x000c << 1)	; Watchdog Time-out Interrupt
+.equ	OC2Aaddr	, (0x000e << 1)	; Timer/Counter2 Compare Match A
+.equ	OC2Baddr	, (0x0010 << 1)	; Timer/Counter2 Compare Match A
+.equ	OVF2addr	, (0x0012 << 1)	; Timer/Counter2 Overflow
+.equ	ICP1addr	, (0x0014 << 1)	; Timer/Counter1 Capture Event
+.equ	OC1Aaddr	, (0x0016 << 1)	; Timer/Counter1 Compare Match A
+.equ	OC1Baddr	, (0x0018 << 1)	; Timer/Counter1 Compare Match B
+.equ	OVF1addr	, (0x001a << 1)	; Timer/Counter1 Overflow
+.equ	OC0Aaddr	, (0x001c << 1)	; TimerCounter0 Compare Match A
+.equ	OC0Baddr	, (0x001e << 1)	; TimerCounter0 Compare Match B
+.equ	OVF0addr	, (0x0020 << 1) ; Timer/Couner0 Overflow
+.equ	SPIaddr		, (0x0022 << 1) ; SPI Serial Transfer Complete
+.equ	URXCaddr	, (0x0024 << 1) ; USART Rx Complete
+.equ	UDREaddr	, (0x0026 << 1) ; USART, Data Register Empty
+.equ	UTXCaddr	, (0x0028 << 1) ; USART Tx Complete
+.equ	ADCCaddr	, (0x002a << 1) ; ADC Conversion Complete
+.equ	ERDYaddr	, (0x002c << 1) ; EEPROM Ready
+.equ	ACIaddr		, (0x002e << 1)	; Analog Comparator
+.equ	TWIaddr		, (0x0030 << 1)	; Two-wire Serial Interface
+.equ	SPMRaddr	, (0x0032 << 1)	; Store Program Memory Read
 
 .equ	INT_VECTORS_SIZE	, 52	; size in words
 
